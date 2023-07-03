@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "python": "^0.0.4",
+    "utf8-base64": "^0.1.2"
+  }
+}

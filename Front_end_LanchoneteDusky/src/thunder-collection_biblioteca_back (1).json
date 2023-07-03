@@ -1,0 +1,352 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "biblioteca_back",
+    "dateExported": "2023-06-27T01:38:00.956Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "7109044c-dd43-48e0-820f-e912fad74b3d",
+            "colId": "97f76680-4fa2-4afe-912d-6ec1bf05d0c6",
+            "containerId": "",
+            "name": "SingUpPost",
+            "url": "http://localhost:3333/api/signup",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2023-05-22T00:50:42.061Z",
+            "modified": "2023-05-22T23:30:35.971Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Igor\",\n  \"email\": \"igor@gmail.com\",\n  \"codigo_pessoa\": 666,\n  \"senha\": \"666\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1b14dffa-f7d4-4366-bef2-ce151839397b",
+            "colId": "97f76680-4fa2-4afe-912d-6ec1bf05d0c6",
+            "containerId": "",
+            "name": "LoginPost ",
+            "url": "http://localhost:3333/api/login",
+            "method": "POST",
+            "sortNum": 7500,
+            "created": "2023-05-22T00:50:42.062Z",
+            "modified": "2023-05-22T23:45:58.658Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"codigo_pessoa\": 666,\n  \"senha\": \"666\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "95cd01f0-9947-44d1-a216-6a2476bb4c34",
+            "colId": "97f76680-4fa2-4afe-912d-6ec1bf05d0c6",
+            "containerId": "",
+            "name": "UsuariosPost",
+            "url": "http://localhost:3333/api/usuarios",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-05-22T00:50:42.063Z",
+            "modified": "2023-05-22T23:31:16.078Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Batatinha\",\n  \"email\": \"batatinha@gmail.com\",\n  \"codigo_pessoa\": 333,\n  \"senha\": \"333\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "cabe514d-1c15-4999-b0e9-6eb39b9f3c39",
+            "colId": "97f76680-4fa2-4afe-912d-6ec1bf05d0c6",
+            "containerId": "",
+            "name": "UsuariosPut",
+            "url": "http://localhost:3333/api/usuarios/1",
+            "method": "PUT",
+            "sortNum": 15000,
+            "created": "2023-05-22T00:50:42.064Z",
+            "modified": "2023-05-23T00:16:50.183Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Carne Moída\",\n  \"email\": \"carnemoida@univali.br\",\n  \"codigo_pessoa\": 333,\n  \"senha\": \"333\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "ce177792-611d-4c0f-9beb-f33bbaa9d922",
+            "colId": "97f76680-4fa2-4afe-912d-6ec1bf05d0c6",
+            "containerId": "",
+            "name": "UsuariosDelete",
+            "url": "http://localhost:3333/api/usuarios/1",
+            "method": "DELETE",
+            "sortNum": 17500,
+            "created": "2023-05-22T00:50:42.065Z",
+            "modified": "2023-05-23T00:17:01.839Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "727fdd06-06fd-4221-bd0c-64fdd5df3c68",
+            "colId": "97f76680-4fa2-4afe-912d-6ec1bf05d0c6",
+            "containerId": "",
+            "name": "UsuariosGetById",
+            "url": "http://localhost:3333/api/usuarios/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-05-22T00:50:42.066Z",
+            "modified": "2023-05-23T00:16:23.218Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "982747a7-2959-4616-bb9f-0c019f54d933",
+            "colId": "97f76680-4fa2-4afe-912d-6ec1bf05d0c6",
+            "containerId": "",
+            "name": "UsuariosGetAll",
+            "url": "http://localhost:3333/api/usuarios",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-05-22T00:50:42.068Z",
+            "modified": "2023-05-22T00:50:42.068Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "508d4645-40fa-465f-8a22-92724838db53",
+            "colId": "97f76680-4fa2-4afe-912d-6ec1bf05d0c6",
+            "containerId": "",
+            "name": "CreateEstoque",
+            "url": "http://localhost:3333/api/estoques",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-05-22T22:29:11.270Z",
+            "modified": "2023-05-22T23:34:29.687Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Whey Monxtro\",\n  \"quantidade\": 200,\n  \"preco\": 250000,\n  \"validade\": \"2022-05-30\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "60be2788-8f09-4bde-91c2-459109ad14cd",
+            "colId": "97f76680-4fa2-4afe-912d-6ec1bf05d0c6",
+            "containerId": "",
+            "name": "GetEstoqueById",
+            "url": "http://localhost:3333/api/estoques/2",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-05-22T22:45:10.826Z",
+            "modified": "2023-05-22T23:34:37.182Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "1db26c44-24b7-4919-901c-5b30e60cf5b8",
+            "colId": "97f76680-4fa2-4afe-912d-6ec1bf05d0c6",
+            "containerId": "",
+            "name": "GetAllEstoque",
+            "url": "http://localhost:3333/api/estoques/",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-05-22T22:47:50.038Z",
+            "modified": "2023-05-22T22:48:16.398Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c003e6b6-960f-4dd4-81b9-3f1723e643c7",
+            "colId": "97f76680-4fa2-4afe-912d-6ec1bf05d0c6",
+            "containerId": "",
+            "name": "UpdateEstoque",
+            "url": "http://localhost:3333/api/estoques/2",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2023-05-22T22:50:26.780Z",
+            "modified": "2023-05-22T23:35:11.317Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Coala\",\n  \"quantidade\": 50,\n  \"preco\": 10.25,\n  \"validade\": \"2023-05-30\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c8e78782-d5e5-4c18-9d4c-817e907c2172",
+            "colId": "97f76680-4fa2-4afe-912d-6ec1bf05d0c6",
+            "containerId": "",
+            "name": "DeleteEstoque",
+            "url": "http://localhost:3333/api/estoques/2",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2023-05-22T23:01:53.060Z",
+            "modified": "2023-05-22T23:35:34.699Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "fc4bd41c-1e7d-4f00-81d5-755116fc8aa6",
+            "colId": "97f76680-4fa2-4afe-912d-6ec1bf05d0c6",
+            "containerId": "",
+            "name": "CreatePedido",
+            "url": "http://localhost:3333/api/pedidos",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-05-22T23:03:46.047Z",
+            "modified": "2023-05-22T23:40:41.086Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id_usuario\": 9,\n  \"valor_total\": 666.5,\n  \"data_pedido\": \"2023-05-22\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "54b0f98b-33c6-4156-82e4-d3bc5ab73272",
+            "colId": "97f76680-4fa2-4afe-912d-6ec1bf05d0c6",
+            "containerId": "",
+            "name": "GetPedidoById",
+            "url": "http://localhost:3333/api/pedidos/2",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-05-22T23:16:17.560Z",
+            "modified": "2023-05-22T23:42:07.600Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "da7d5270-c846-4f5f-9e27-afb18b492838",
+            "colId": "97f76680-4fa2-4afe-912d-6ec1bf05d0c6",
+            "containerId": "",
+            "name": "GetAllPedidos",
+            "url": "http://localhost:3333/api/pedidos/",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-05-22T23:21:07.860Z",
+            "modified": "2023-05-22T23:22:01.178Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "ea2c286c-7979-41f4-972d-13daec1e7a87",
+            "colId": "97f76680-4fa2-4afe-912d-6ec1bf05d0c6",
+            "containerId": "",
+            "name": "UpdatePedido",
+            "url": "http://localhost:3333/api/pedidos/2",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2023-05-22T23:22:07.987Z",
+            "modified": "2023-05-22T23:42:38.016Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id_usuario\": 9,\n  \"valor_total\": 100.5,\n  \"data_pedido\": \"2022-05-23\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        },
+        {
+            "_id": "90e33f64-12c7-4cc5-80c2-6efe5afa1beb",
+            "colId": "97f76680-4fa2-4afe-912d-6ec1bf05d0c6",
+            "containerId": "",
+            "name": "DeletePedidoById",
+            "url": "http://localhost:3333/api/pedidos/2",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2023-05-22T23:29:25.604Z",
+            "modified": "2023-05-22T23:43:22.453Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{access_token}}"
+            },
+            "tests": []
+        }
+    ]
+}
